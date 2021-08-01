@@ -17,11 +17,10 @@
 		014F12AA26AEBE7800DB9855 /* BlackRot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F12A926AEBE7800DB9855 /* BlackRot.swift */; };
 		014F12AC26AEBEEB00DB9855 /* LeafBlight .swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F12AB26AEBEEA00DB9855 /* LeafBlight .swift */; };
 		014F12AE26AEBEFA00DB9855 /* Esca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F12AD26AEBEFA00DB9855 /* Esca.swift */; };
-		0171621126AAAFCF0000DD4C /* GrapeDiseaseDetectionMNV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0171621026AAAFCF0000DD4C /* GrapeDiseaseDetectionMNV2.mlmodel */; };
+		01879D8B26B6745A0042CEC3 /* GrapeDiseaseDetection.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 01879D8A26B6745A0042CEC3 /* GrapeDiseaseDetection.mlmodel */; };
 		01BAF107269F34E200D4CCBF /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BAF106269F34E200D4CCBF /* CaptureImageView.swift */; };
 		01BAF109269F354B00D4CCBF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BAF108269F354B00D4CCBF /* Coordinator.swift */; };
 		01BAF10B269F374000D4CCBF /* CamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BAF10A269F374000D4CCBF /* CamView.swift */; };
-		01CF0833269DBA11000EF59A /* GrapeDiseaseDetection.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 01CF0832269DBA11000EF59A /* GrapeDiseaseDetection.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +36,10 @@
 		014F12A926AEBE7800DB9855 /* BlackRot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRot.swift; sourceTree = "<group>"; };
 		014F12AB26AEBEEA00DB9855 /* LeafBlight .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeafBlight .swift"; sourceTree = "<group>"; };
 		014F12AD26AEBEFA00DB9855 /* Esca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esca.swift; sourceTree = "<group>"; };
-		0171621026AAAFCF0000DD4C /* GrapeDiseaseDetectionMNV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GrapeDiseaseDetectionMNV2.mlmodel; path = ../../../../Models/GrapeDiseaseDetectionMNV2.mlmodel; sourceTree = "<group>"; };
+		01879D8A26B6745A0042CEC3 /* GrapeDiseaseDetection.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GrapeDiseaseDetection.mlmodel; sourceTree = "<group>"; };
 		01BAF106269F34E200D4CCBF /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 		01BAF108269F354B00D4CCBF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		01BAF10A269F374000D4CCBF /* CamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamView.swift; sourceTree = "<group>"; };
-		01CF0832269DBA11000EF59A /* GrapeDiseaseDetection.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GrapeDiseaseDetection.mlmodel; path = ../../../../../../GrapeDiseaseDetection.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +72,7 @@
 		010A0D3B2699CB7F009F4C23 /* GDD_v1 */ = {
 			isa = PBXGroup;
 			children = (
-				0171621026AAAFCF0000DD4C /* GrapeDiseaseDetectionMNV2.mlmodel */,
-				01CF0832269DBA11000EF59A /* GrapeDiseaseDetection.mlmodel */,
+				01879D8A26B6745A0042CEC3 /* GrapeDiseaseDetection.mlmodel */,
 				010A0D3C2699CB7F009F4C23 /* GDD_v1App.swift */,
 				010A0D3E2699CB7F009F4C23 /* ContentView.swift */,
 				010A0D402699CB80009F4C23 /* Assets.xcassets */,
@@ -173,11 +170,10 @@
 			files = (
 				0116313726A7230F00A9FC18 /* ClassifierModel.swift in Sources */,
 				01BAF10B269F374000D4CCBF /* CamView.swift in Sources */,
-				0171621126AAAFCF0000DD4C /* GrapeDiseaseDetectionMNV2.mlmodel in Sources */,
-				01CF0833269DBA11000EF59A /* GrapeDiseaseDetection.mlmodel in Sources */,
 				010A0D4C2699DF39009F4C23 /* FaqView.swift in Sources */,
 				010A0D3F2699CB7F009F4C23 /* ContentView.swift in Sources */,
 				01BAF107269F34E200D4CCBF /* CaptureImageView.swift in Sources */,
+				01879D8B26B6745A0042CEC3 /* GrapeDiseaseDetection.mlmodel in Sources */,
 				010A0D3D2699CB7F009F4C23 /* GDD_v1App.swift in Sources */,
 				010A0D4E2699E04C009F4C23 /* TeamInfoView.swift in Sources */,
 				01BAF109269F354B00D4CCBF /* Coordinator.swift in Sources */,
