@@ -14,6 +14,7 @@
 		010A0D4C2699DF39009F4C23 /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A0D4B2699DF39009F4C23 /* FaqView.swift */; };
 		010A0D4E2699E04C009F4C23 /* TeamInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A0D4D2699E04C009F4C23 /* TeamInfoView.swift */; };
 		0116313726A7230F00A9FC18 /* ClassifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116313626A7230F00A9FC18 /* ClassifierModel.swift */; };
+		01338F3226BD3D9B00F1043F /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 01338F3126BD3D9B00F1043F /* icon */; };
 		014F12AA26AEBE7800DB9855 /* BlackRot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F12A926AEBE7800DB9855 /* BlackRot.swift */; };
 		014F12AC26AEBEEB00DB9855 /* LeafBlight .swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F12AB26AEBEEA00DB9855 /* LeafBlight .swift */; };
 		014F12AE26AEBEFA00DB9855 /* Esca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F12AD26AEBEFA00DB9855 /* Esca.swift */; };
@@ -33,6 +34,7 @@
 		010A0D4B2699DF39009F4C23 /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
 		010A0D4D2699E04C009F4C23 /* TeamInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoView.swift; sourceTree = "<group>"; };
 		0116313626A7230F00A9FC18 /* ClassifierModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierModel.swift; sourceTree = "<group>"; };
+		01338F3126BD3D9B00F1043F /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 		014F12A926AEBE7800DB9855 /* BlackRot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRot.swift; sourceTree = "<group>"; };
 		014F12AB26AEBEEA00DB9855 /* LeafBlight .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeafBlight .swift"; sourceTree = "<group>"; };
 		014F12AD26AEBEFA00DB9855 /* Esca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esca.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		010A0D3B2699CB7F009F4C23 /* GDD_v1 */ = {
 			isa = PBXGroup;
 			children = (
+				01338F3126BD3D9B00F1043F /* icon */,
 				01879D8A26B6745A0042CEC3 /* GrapeDiseaseDetection.mlmodel */,
 				010A0D3C2699CB7F009F4C23 /* GDD_v1App.swift */,
 				010A0D3E2699CB7F009F4C23 /* ContentView.swift */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010A0D442699CB80009F4C23 /* Preview Assets.xcassets in Resources */,
+				01338F3226BD3D9B00F1043F /* icon in Resources */,
 				010A0D412699CB80009F4C23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +309,7 @@
 		010A0D492699CB80009F4C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GDD_v1/Preview Content\"";
@@ -327,7 +331,7 @@
 		010A0D4A2699CB80009F4C23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"GDD_v1/Preview Content\"";
