@@ -10,11 +10,13 @@ class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerContro
   @Binding var isCoordinatorShown: Bool
   @Binding var imageInCoordinator: Image?
   @Binding var imageInUIImage: UIImage?
+  @Binding var useCameraImg: Bool
     
-    init(isShown: Binding<Bool>, image: Binding<Image?>, originalImage: Binding<UIImage?>) {
+    init(isShown: Binding<Bool>, image: Binding<Image?>, originalImage: Binding<UIImage?>, useCamera: Binding<Bool>) {
     _isCoordinatorShown = isShown
     _imageInCoordinator = image
     _imageInUIImage = originalImage
+    _useCameraImg = useCamera
   }
     
   func imagePickerController(_ picker: UIImagePickerController,

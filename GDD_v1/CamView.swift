@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct CamView: View {
-  
+  @State var useCam: Bool = false
   @State var image: Image? = nil
   @State var showCaptureImageView: Bool = false
   @State var inputImage: UIImage? = nil
+  
   @ObservedObject var imageModel: ClassifierModel
   @State var prediction: String
   let screenSize: CGRect = UIScreen.main.bounds
-    
   var body: some View {
     ZStack {
       VStack {
@@ -31,17 +31,35 @@ struct CamView: View {
 
         }
         // 2
-        Button(action: {
-          self.showCaptureImageView.toggle()
-            self.prediction = ""
-        }) {
-            HStack{
-                Image(systemName: "photo.on.rectangle.angled").padding()
-                Text("Choose photos").bold().padding()
-            }.background(RoundedRectangle(cornerRadius: 6.0).stroke(Color.blue, lineWidth: 2))
-            .foregroundColor(.blue)
-        }.padding()
-        Spacer()
+        HStack{
+            Spacer()
+            Button(action: {
+                self.useCam = true
+                self.showCaptureImageView.toggle()
+                self.prediction = ""
+            }) {
+                HStack{
+                    Image(systemName: "photo.on.rectangle.angled").padding()
+                    Text("Camera").bold().padding()
+                }.background(RoundedRectangle(cornerRadius: 6.0).stroke(Color.blue, lineWidth: 2))
+                .foregroundColor(.blue)
+            }.padding()
+            Spacer()
+            
+            Button(action: {
+                self.useCam = false
+                self.showCaptureImageView.toggle()
+                self.prediction = ""
+            }) {
+                HStack{
+                    Image(systemName: "photo.on.rectangle.angled").padding()
+                    Text("Gallery").bold().padding()
+                }.background(RoundedRectangle(cornerRadius: 6.0).stroke(Color.blue, lineWidth: 2))
+                .foregroundColor(.blue)
+            }.padding()
+            Spacer()
+        }
+
         // 3
         Button(action: {
             self.imageModel.getPredictions(inputImage!)
@@ -108,7 +126,7 @@ struct CamView: View {
         }
       }
       if (showCaptureImageView) {
-        CaptureImageView(isShown: $showCaptureImageView, image: $image, originalImage: $inputImage)
+        CaptureImageView(isShown: $showCaptureImageView, image: $image, originalImage: $inputImage, useCamera: $useCam)
       }
     }
   }

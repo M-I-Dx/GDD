@@ -14,9 +14,10 @@ struct CaptureImageView {
     @Binding var isShown: Bool
     @Binding var image: Image?
     @Binding var originalImage: UIImage?
+    @Binding var useCamera: Bool
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator(isShown: $isShown, image: $image, originalImage: $originalImage)
+        return Coordinator(isShown: $isShown, image: $image, originalImage: $originalImage, useCamera: $useCamera)
     }
 }
 
@@ -25,9 +26,9 @@ extension CaptureImageView: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<CaptureImageView>) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.delegate = context.coordinator
-//        if UIImagePickerController.isSourceTypeAvailable(.camera){
-//            picker.sourceType = .camera
-//        }
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)) && (useCamera){
+            picker.sourceType = .camera
+        }
         return picker
     }
     
